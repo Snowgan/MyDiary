@@ -1,5 +1,5 @@
 # MyDiary
-MyDiary is an iOS app to write and save diary. Using Swift language. you may lock all your diary with a personal pattern. Now the version is 1.0.
+MyDiary is an iOS app to write and save diary. Using Swift language. You may lock all your diary with a personal pattern. Now the version is 1.0.
 
 ## Screen Snap
 
