@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--密码设置-->
+        <scene sceneID="npa-sl-71b">
+            <objects>
+                <viewController id="rum-DC-tyR" customClass="PwdSettingViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qX9-sH-dKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Emc-Sh-8NV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vXa-FJ-v6N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-VD-xkM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rum-DC-tyR" id="bXT-or-Q6j"/>
+                                    <outlet property="delegate" destination="rum-DC-tyR" id="dhC-i5-q1a"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wah-VD-xkM" firstAttribute="leading" secondItem="vXa-FJ-v6N" secondAttribute="leading" id="62U-Ci-wJh"/>
+                            <constraint firstItem="Wah-VD-xkM" firstAttribute="bottom" secondItem="Emc-Sh-8NV" secondAttribute="top" id="VgD-FF-TQm"/>
+                            <constraint firstItem="Wah-VD-xkM" firstAttribute="top" secondItem="vXa-FJ-v6N" secondAttribute="top" id="aLs-vZ-yJA"/>
+                            <constraint firstAttribute="trailing" secondItem="Wah-VD-xkM" secondAttribute="trailing" id="e2g-fr-ckV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="密码设置" id="PPn-5B-0lI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="Wah-VD-xkM" id="MZp-BB-JR9"/>
+                        <segue destination="p64-SU-T0A" kind="show" identifier="SettingPwdToCoreLock" id="9Ro-M3-FXx"/>
+                        <segue destination="p64-SU-T0A" kind="show" identifier="ModifyPwdToCoreLock" id="tis-KW-QgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnv-hQ-aK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-373"/>
+        </scene>
+        <!--Core Lock View Controller-->
+        <scene sceneID="Ydx-LZ-AMe">
+            <objects>
+                <viewController storyboardIdentifier="CoreLockVC" id="p64-SU-T0A" customClass="CoreLockViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mWa-Dm-HoP"/>
+                        <viewControllerLayoutGuide type="bottom" id="JEV-Bn-CjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t8R-8A-mQz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9e-8d-xJc" customClass="LockInfoView" customModule="MyDiary" customModuleProvider="target">
+                                <rect key="frame" x="137" y="94" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P9e-8d-xJc" secondAttribute="height" multiplier="1:1" id="4Qb-tN-xUE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-Zr-bNd" customClass="LockForInputView" customModule="MyDiary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="204" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0dH-Zr-bNd" secondAttribute="height" multiplier="1:1" id="JV4-3U-Shh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-vt-vjT" customClass="LockMessageLabel" customModule="MyDiary" customModuleProvider="target">
+                                <rect key="frame" x="159" y="159" width="0.0" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Eb3-UU-a4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JEV-Bn-CjT" firstAttribute="top" secondItem="0dH-Zr-bNd" secondAttribute="bottom" constant="44" id="PQq-Ff-z8L"/>
+                            <constraint firstItem="0dH-Zr-bNd" firstAttribute="top" secondItem="ugq-vt-vjT" secondAttribute="bottom" constant="20" id="SWE-35-In6"/>
+                            <constraint firstItem="P9e-8d-xJc" firstAttribute="top" secondItem="mWa-Dm-HoP" secondAttribute="bottom" constant="30" id="c94-Bk-Vg1"/>
+                            <constraint firstItem="ugq-vt-vjT" firstAttribute="top" secondItem="P9e-8d-xJc" secondAttribute="bottom" constant="20" id="g3s-hz-gd0"/>
+                            <constraint firstItem="0dH-Zr-bNd" firstAttribute="leading" secondItem="t8R-8A-mQz" secondAttribute="leading" id="kWW-uL-0th"/>
+                            <constraint firstAttribute="centerX" secondItem="P9e-8d-xJc" secondAttribute="centerX" id="n6X-7A-xWo"/>
+                            <constraint firstAttribute="centerX" secondItem="ugq-vt-vjT" secondAttribute="centerX" constant="0.5" id="rGg-7B-meQ"/>
+                            <constraint firstAttribute="trailing" secondItem="0dH-Zr-bNd" secondAttribute="trailing" id="wCm-Xa-dPL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lockInfoView" destination="P9e-8d-xJc" id="c1y-GF-JME"/>
+                        <outlet property="lockInputView" destination="0dH-Zr-bNd" id="UEz-1D-UNd"/>
+                        <outlet property="lockMsgLabel" destination="ugq-vt-vjT" id="AYW-Ew-Cgk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccT-CK-ccY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="-373"/>
+        </scene>
+        <!--My Diary-->
+        <scene sceneID="paU-Dk-d4v">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" id="PhP-J5-VfH" customClass="MainViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1J6-2V-EZK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zdf-dy-yek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M7x-IH-GBA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-PE-ZRL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PhP-J5-VfH" id="tUT-cX-COM"/>
+                                    <outlet property="delegate" destination="PhP-J5-VfH" id="nln-dp-l8Y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I3h-PE-ZRL" firstAttribute="leading" secondItem="M7x-IH-GBA" secondAttribute="leading" id="4pb-jl-BHo"/>
+                            <constraint firstAttribute="bottom" secondItem="I3h-PE-ZRL" secondAttribute="bottom" id="7MN-UL-dMN"/>
+                            <constraint firstItem="I3h-PE-ZRL" firstAttribute="top" secondItem="M7x-IH-GBA" secondAttribute="top" id="KUk-T2-zjH"/>
+                            <constraint firstAttribute="trailing" secondItem="I3h-PE-ZRL" secondAttribute="trailing" id="PFx-9V-MrM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Diary" id="fNZ-lQ-BOq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WSn-Ca-9DS">
+                            <connections>
+                                <segue destination="DCc-Ms-lrR" kind="show" identifier="AddNewDiary" id="n5W-TB-DCw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="I3h-PE-ZRL" id="69J-yT-bj3"/>
+                        <segue destination="DCc-Ms-lrR" kind="show" identifier="ShowExistDiary" id="xkg-Dr-apt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vps-hV-wv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="312"/>
+        </scene>
+        <!--Diary Detail View Controller-->
+        <scene sceneID="iKK-Hk-8yZ">
+            <objects>
+                <viewController id="DCc-Ms-lrR" customClass="DiaryDetailViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cFF-iF-hAS"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Qw-Zh-ymF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FD4-eV-cFt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qz4-qi-Dul">
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Qz4-qi-Dul" firstAttribute="top" secondItem="FD4-eV-cFt" secondAttribute="topMargin" id="H7I-VC-UiV"/>
+                            <constraint firstItem="Qz4-qi-Dul" firstAttribute="bottom" secondItem="FD4-eV-cFt" secondAttribute="bottomMargin" id="S4K-Ac-dN3"/>
+                            <constraint firstItem="Qz4-qi-Dul" firstAttribute="leading" secondItem="FD4-eV-cFt" secondAttribute="leadingMargin" id="Wii-KZ-fbV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qz4-qi-Dul" secondAttribute="trailing" id="t4D-FM-6DX"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="diaryText" destination="Qz4-qi-Dul" id="n13-hD-Tg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRR-b8-smG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="312"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="R2j-BV-Eva">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="wUl-DT-3lp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="iC4-qF-Qvz">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LVU-w5-ApE" kind="relationship" relationship="viewControllers" id="Luz-Js-LCu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rou-RL-m8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cur-fH-MjQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVU-w5-ApE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="1" systemItem="favorites" id="vVW-Py-Fep"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cqq-iY-rUy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PhP-J5-VfH" kind="relationship" relationship="rootViewController" id="ydp-AM-ZWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPc-iH-Ut6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K13-m5-pAZ">
+            <objects>
+                <navigationController storyboardIdentifier="SettingMenuVC" automaticallyAdjustsScrollViewInsets="NO" id="tMU-Mu-5SV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BkW-5y-QZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rum-DC-tyR" kind="relationship" relationship="rootViewController" id="dw4-bl-5F8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgs-ff-KB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="-373"/>
+        </scene>
+        <!--Slide Menu Controller-->
+        <scene sceneID="Ech-1u-nv9">
+            <objects>
+                <tableViewController id="VDU-c0-Naa" customClass="SlideMenuController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Uj6-sF-MSP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="VDU-c0-Naa" id="W0p-Ot-ZIF"/>
+                            <outlet property="delegate" destination="VDU-c0-Naa" id="ugo-lj-uxf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="z9K-Tm-rSR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZq-Ip-tbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-373"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="n5W-TB-DCw"/>
+        <segue reference="tis-KW-QgD"/>
+    </inferredMetricsTieBreakers>
+</document>

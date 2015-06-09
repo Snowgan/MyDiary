@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38BFE5031B26CDFA00224593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5021B26CDFA00224593 /* AppDelegate.swift */; };
 		38BFE5061B26CDFA00224593 /* MyDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5041B26CDFA00224593 /* MyDiary.xcdatamodeld */; };
-		38BFE5081B26CDFA00224593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5071B26CDFA00224593 /* ViewController.swift */; };
-		38BFE50B1B26CDFA00224593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BFE5091B26CDFA00224593 /* Main.storyboard */; };
 		38BFE50D1B26CDFA00224593 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BFE50C1B26CDFA00224593 /* Images.xcassets */; };
 		38BFE5101B26CDFA00224593 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BFE50E1B26CDFA00224593 /* LaunchScreen.xib */; };
 		38BFE51C1B26CDFA00224593 /* MyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE51B1B26CDFA00224593 /* MyDiaryTests.swift */; };
+		38BFE5261B26CEEA00224593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BFE5251B26CEEA00224593 /* Main.storyboard */; };
+		38BFE52C1B26D13000224593 /* FileDirectoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE52B1B26D13000224593 /* FileDirectoryModel.swift */; };
+		38BFE52E1B26D1C400224593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE52D1B26D1C400224593 /* AppDelegate.swift */; };
+		38BFE5351B26D1DA00224593 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE52F1B26D1DA00224593 /* MainViewController.swift */; };
+		38BFE5361B26D1DA00224593 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5301B26D1DA00224593 /* DiaryDetailViewController.swift */; };
+		38BFE5371B26D1DA00224593 /* CoreLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5311B26D1DA00224593 /* CoreLockViewController.swift */; };
+		38BFE5381B26D1DA00224593 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5321B26D1DA00224593 /* ContainerViewController.swift */; };
+		38BFE5391B26D1DA00224593 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5331B26D1DA00224593 /* SlideMenuController.swift */; };
+		38BFE53A1B26D1DA00224593 /* PwdSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5341B26D1DA00224593 /* PwdSettingViewController.swift */; };
+		38BFE53E1B26D1EA00224593 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE53B1B26D1EA00224593 /* DiaryModel.swift */; };
+		38BFE53F1B26D1EA00224593 /* DataManageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE53C1B26D1EA00224593 /* DataManageModel.swift */; };
+		38BFE5401B26D1EA00224593 /* PasswdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE53D1B26D1EA00224593 /* PasswdManager.swift */; };
+		38BFE5471B26D1F600224593 /* DiaryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5411B26D1F600224593 /* DiaryListCell.swift */; };
+		38BFE5481B26D1F600224593 /* LockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5421B26D1F600224593 /* LockInfoView.swift */; };
+		38BFE5491B26D1F600224593 /* LockMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5431B26D1F600224593 /* LockMessageLabel.swift */; };
+		38BFE54A1B26D1F600224593 /* LockForInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5441B26D1F600224593 /* LockForInputView.swift */; };
+		38BFE54B1B26D1F600224593 /* LockItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5451B26D1F600224593 /* LockItemView.swift */; };
+		38BFE54C1B26D1F600224593 /* SelfImageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE5461B26D1F600224593 /* SelfImageInfoView.swift */; };
+		38BFE54E1B26D20100224593 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BFE54D1B26D20100224593 /* CommonFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +45,31 @@
 /* Begin PBXFileReference section */
 		38BFE4FD1B26CDFA00224593 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BFE5011B26CDFA00224593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38BFE5021B26CDFA00224593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38BFE5051B26CDFA00224593 /* MyDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDiary.xcdatamodel; sourceTree = "<group>"; };
-		38BFE5071B26CDFA00224593 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		38BFE50A1B26CDFA00224593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38BFE50C1B26CDFA00224593 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38BFE50F1B26CDFA00224593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		38BFE5151B26CDFA00224593 /* MyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BFE51A1B26CDFA00224593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38BFE51B1B26CDFA00224593 /* MyDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryTests.swift; sourceTree = "<group>"; };
+		38BFE5251B26CEEA00224593 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		38BFE52B1B26D13000224593 /* FileDirectoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDirectoryModel.swift; sourceTree = "<group>"; };
+		38BFE52D1B26D1C400224593 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38BFE52F1B26D1DA00224593 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		38BFE5301B26D1DA00224593 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		38BFE5311B26D1DA00224593 /* CoreLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLockViewController.swift; sourceTree = "<group>"; };
+		38BFE5321B26D1DA00224593 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		38BFE5331B26D1DA00224593 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		38BFE5341B26D1DA00224593 /* PwdSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwdSettingViewController.swift; sourceTree = "<group>"; };
+		38BFE53B1B26D1EA00224593 /* DiaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		38BFE53C1B26D1EA00224593 /* DataManageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManageModel.swift; sourceTree = "<group>"; };
+		38BFE53D1B26D1EA00224593 /* PasswdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswdManager.swift; sourceTree = "<group>"; };
+		38BFE5411B26D1F600224593 /* DiaryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryListCell.swift; sourceTree = "<group>"; };
+		38BFE5421B26D1F600224593 /* LockInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockInfoView.swift; sourceTree = "<group>"; };
+		38BFE5431B26D1F600224593 /* LockMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockMessageLabel.swift; sourceTree = "<group>"; };
+		38BFE5441B26D1F600224593 /* LockForInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockForInputView.swift; sourceTree = "<group>"; };
+		38BFE5451B26D1F600224593 /* LockItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockItemView.swift; sourceTree = "<group>"; };
+		38BFE5461B26D1F600224593 /* SelfImageInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfImageInfoView.swift; sourceTree = "<group>"; };
+		38BFE54D1B26D20100224593 /* CommonFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +111,12 @@
 		38BFE4FF1B26CDFA00224593 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
-				38BFE5021B26CDFA00224593 /* AppDelegate.swift */,
-				38BFE5071B26CDFA00224593 /* ViewController.swift */,
-				38BFE5091B26CDFA00224593 /* Main.storyboard */,
+				38BFE52D1B26D1C400224593 /* AppDelegate.swift */,
+				38BFE54D1B26D20100224593 /* CommonFunction.swift */,
+				38BFE5291B26CFE500224593 /* Models */,
+				38BFE5281B26CFDF00224593 /* Views */,
+				38BFE5271B26CFD600224593 /* Controllers */,
+				38BFE5251B26CEEA00224593 /* Main.storyboard */,
 				38BFE50C1B26CDFA00224593 /* Images.xcassets */,
 				38BFE50E1B26CDFA00224593 /* LaunchScreen.xib */,
 				38BFE5041B26CDFA00224593 /* MyDiary.xcdatamodeld */,
@@ -113,6 +148,43 @@
 				38BFE51A1B26CDFA00224593 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38BFE5271B26CFD600224593 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38BFE52F1B26D1DA00224593 /* MainViewController.swift */,
+				38BFE5301B26D1DA00224593 /* DiaryDetailViewController.swift */,
+				38BFE5311B26D1DA00224593 /* CoreLockViewController.swift */,
+				38BFE5321B26D1DA00224593 /* ContainerViewController.swift */,
+				38BFE5331B26D1DA00224593 /* SlideMenuController.swift */,
+				38BFE5341B26D1DA00224593 /* PwdSettingViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		38BFE5281B26CFDF00224593 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38BFE5411B26D1F600224593 /* DiaryListCell.swift */,
+				38BFE5421B26D1F600224593 /* LockInfoView.swift */,
+				38BFE5431B26D1F600224593 /* LockMessageLabel.swift */,
+				38BFE5441B26D1F600224593 /* LockForInputView.swift */,
+				38BFE5451B26D1F600224593 /* LockItemView.swift */,
+				38BFE5461B26D1F600224593 /* SelfImageInfoView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		38BFE5291B26CFE500224593 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38BFE52B1B26D13000224593 /* FileDirectoryModel.swift */,
+				38BFE53B1B26D1EA00224593 /* DiaryModel.swift */,
+				38BFE53C1B26D1EA00224593 /* DataManageModel.swift */,
+				38BFE53D1B26D1EA00224593 /* PasswdManager.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38BFE50B1B26CDFA00224593 /* Main.storyboard in Resources */,
+				38BFE5261B26CEEA00224593 /* Main.storyboard in Resources */,
 				38BFE5101B26CDFA00224593 /* LaunchScreen.xib in Resources */,
 				38BFE50D1B26CDFA00224593 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +287,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38BFE5081B26CDFA00224593 /* ViewController.swift in Sources */,
-				38BFE5031B26CDFA00224593 /* AppDelegate.swift in Sources */,
+				38BFE54B1B26D1F600224593 /* LockItemView.swift in Sources */,
+				38BFE53A1B26D1DA00224593 /* PwdSettingViewController.swift in Sources */,
+				38BFE5481B26D1F600224593 /* LockInfoView.swift in Sources */,
+				38BFE53E1B26D1EA00224593 /* DiaryModel.swift in Sources */,
+				38BFE53F1B26D1EA00224593 /* DataManageModel.swift in Sources */,
+				38BFE52E1B26D1C400224593 /* AppDelegate.swift in Sources */,
+				38BFE54E1B26D20100224593 /* CommonFunction.swift in Sources */,
+				38BFE54C1B26D1F600224593 /* SelfImageInfoView.swift in Sources */,
+				38BFE5491B26D1F600224593 /* LockMessageLabel.swift in Sources */,
+				38BFE5361B26D1DA00224593 /* DiaryDetailViewController.swift in Sources */,
+				38BFE5471B26D1F600224593 /* DiaryListCell.swift in Sources */,
+				38BFE5381B26D1DA00224593 /* ContainerViewController.swift in Sources */,
 				38BFE5061B26CDFA00224593 /* MyDiary.xcdatamodeld in Sources */,
+				38BFE5401B26D1EA00224593 /* PasswdManager.swift in Sources */,
+				38BFE52C1B26D13000224593 /* FileDirectoryModel.swift in Sources */,
+				38BFE54A1B26D1F600224593 /* LockForInputView.swift in Sources */,
+				38BFE5371B26D1DA00224593 /* CoreLockViewController.swift in Sources */,
+				38BFE5391B26D1DA00224593 /* SlideMenuController.swift in Sources */,
+				38BFE5351B26D1DA00224593 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		38BFE5091B26CDFA00224593 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38BFE50A1B26CDFA00224593 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		38BFE50E1B26CDFA00224593 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,9 +424,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
