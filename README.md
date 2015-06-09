@@ -1,5 +1,5 @@
 # MyDiary
-MyDiary is an iOS app to write and save diary. Using Swift language. You can set a password so the diary content is only for yourself. Now the version is 1.0.
+MyDiary is an iOS app to write and save diary. Using Swift language. you may lock all your diary with a personal pattern. Now the version is 1.0.
 
 ## Screen Snap
 
@@ -12,9 +12,9 @@ MyDiary is an iOS app to write and save diary. Using Swift language. You can set
 ![image](https://github.com/Snowgan/MyDiary/blob/master/MyDiarySnap04.gif)
 
 ## Main Tech Point
-* Using Core graphics to draw all the view of shape password
+* Using CoreGraphics to draw all the view of lock
 * Using Core Data to save diary content
-* Using delegate control communication between class
+* Using delegates control communication from View to Controller
 * Contianer Controller to manage slide menu
 
 ## To be continued
